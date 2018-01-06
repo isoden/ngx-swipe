@@ -42,6 +42,12 @@ export class AppModule { }
 ></div>
 ```
 
+## Limitation
+
+ngx-swipe uses [PointerEvent](https://developer.mozilla.org/ja/docs/Web/API/PointerEvent).  
+please use polyfill (e.g. [PEP](https://github.com/jquery/PEP)) if you need.  
+[Pointer events - caniuse](https://caniuse.com/#feat=pointer)
+
 ## License
 
 [MIT License](https://isoden.mit-license.org)
