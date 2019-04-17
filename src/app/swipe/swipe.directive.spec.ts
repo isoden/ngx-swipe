@@ -1,9 +1,9 @@
-import { Component, DebugElement } from '@angular/core';
-import { TestBed, async, ComponentFixture } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { ReplaySubject } from 'rxjs/ReplaySubject';
-import { cold, hot } from 'jasmine-marbles';
-import { SwipeModule } from './swipe.module';
+import {Component} from '@angular/core';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {By} from '@angular/platform-browser';
+import {cold} from 'jasmine-marbles';
+import {SwipeModule} from './swipe.module';
+import {ReplaySubject} from 'rxjs/internal/ReplaySubject';
 
 @Component({
   template: `<div (ngxSwipeX)="swipeX.next($event)" (ngxSwipeY)="swipeY.next($event)"></div>`,

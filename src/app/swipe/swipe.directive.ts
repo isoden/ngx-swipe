@@ -7,15 +7,12 @@ import {
   ElementRef,
   Renderer2,
 } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { Subject } from 'rxjs/Subject';
-import { skipUntil } from 'rxjs/operators/skipUntil';
-import { takeUntil } from 'rxjs/operators/takeUntil';
-import { mergeMap } from 'rxjs/operators/mergeMap';
-import { map } from 'rxjs/operators/map';
-import { scan } from 'rxjs/operators/scan';
-import { share } from 'rxjs/operators/share';
-import { distinctUntilChanged } from 'rxjs/operators/distinctUntilChanged';
+import {distinctUntilChanged} from 'rxjs/internal/operators/distinctUntilChanged';
+import {map, scan, share, takeUntil} from 'rxjs/operators';
+import {mergeMap} from 'rxjs/internal/operators/mergeMap';
+import {Subject} from 'rxjs/internal/Subject';
+import {Observable} from 'rxjs/internal/Observable';
+
 
 interface Vector {
   x: number;
